@@ -1077,6 +1077,10 @@ public class SwipeLayout extends FrameLayout {
         this.mWillOpenPercentAfterClose = willOpenPercentAfterClose;
     }
 
+    public void setTouchSlop(int touchSlop) {
+        mTouchSlop = touchSlop;
+    }
+
     private boolean insideAdapterView() {
         return getAdapterView() != null;
     }
