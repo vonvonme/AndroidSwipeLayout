@@ -970,6 +970,11 @@ public class SwipeLayout extends FrameLayout {
     public void setBottomSwipeEnabled(boolean bottomSwipeEnabled) {
         this.mSwipesEnabled[DragEdge.Bottom.ordinal()] = bottomSwipeEnabled;
     }
+
+    public void setTouchSlop(int touchSlop) {
+        mTouchSlop = touchSlop;
+    }
+
     private boolean insideAdapterView() {
         return getAdapterView() != null;
     }
